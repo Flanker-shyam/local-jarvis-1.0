@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Jarvis.App.MainPage"
+             Title="Jarvis">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+        <Label
+            Text="Jarvis Voice Assistant"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Tap the microphone to speak"
+            SemanticProperties.HeadingLevel="Level2"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="MicButton"
+            Text="🎤 Speak"
+            SemanticProperties.Hint="Tap to start voice command"
+            Clicked="OnMicButtonClicked"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="StatusLabel"
+            Text="Ready"
+            FontSize="14"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
